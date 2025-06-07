@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap');
+
+:root {
+    --BeigeClaro: #F5EFE6;
+    --BeigeOscuro: #E1D5C9;
+    --Marron: #8B5E3C;
+    --Negro: #1C1C1C;
+    --Blanco: #FFFFFF;
+}
+
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65%;
+    background-color: var(--BeigeClaro);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--BeigeClaro);
+    color: var(--Negro);
+}
+
+.perfil {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.perfil-imagen {
+    width: 180px;
+    /* Tamaño ajustable */
+    height: auto;
+    border-radius: 50%;
+    /* Hace que la imagen tenga forma de círculo */
+    margin-top: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: var(--BeigeOscuro);
+    color: var(--Negro);
+    text-align: center;
+    padding: 20px;
+    /* Ajustado para coincidir con style.css */
+    font-size: 2rem;
+    /* Ajuste de tamaño */
+    font-family: 'Playfair Display', serif;
+    border-bottom: 3px solid var(--Marron);
+}
+
+/* Navegación */
+.nav-bg {
+    background-color: var(--Marron);
+    padding: 10px 0;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navegacion-principal a {
+    color: var(--Blanco);
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--BeigeOscuro);
+    color: var(--Negro);
+    border-radius: 8px;
+}
+
+
+/* Contenedor principal */
+.box {
+    background-color: var(--Blanco);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 80%;
+    margin: 40px auto;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.perfil h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.perfil p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.informacion h3,
+.descripcion h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-top: 20px;
+}
+
+.informacion p,
+.descripcion p {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Secciones */
+.seccion {
+    background-color: var(--BeigeOscuro);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--Marron);
+    color: var(--Blanco);
+    text-align: center;
+    padding: 15px;
+    /* Ajustado para coincidir con style.css */
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+}

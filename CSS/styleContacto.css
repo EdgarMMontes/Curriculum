@@ -8,14 +8,7 @@
     --Blanco: #FFFFFF;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem; /* Más grande para destacar */
-    text-align: center;
-    font-weight: 700;
-    margin: 30px 0;
-    color: var(--Negro);
-}
+
 /* Reset de estilos */
 * {
     margin: 0;
@@ -201,4 +194,98 @@ h2 {
     padding: 15px; /* Ajustado para coincidir con style.css */
     font-size: 1.8rem;
     font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem; /* Más grande para destacar */
+    text-align: center;
+    font-weight: 700;
+    margin: 30px 0;
+    color: var(--Negro);
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+    color: var(--Marron);
+}
+
+.tabla-contacto {
+    background-color: var(--BeigeOscuro);
+    padding: 30px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 600px; /* Reducimos el ancho para centrar mejor */
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Ajustes específicos para la tabla */
+.tabla-contacto table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-contacto th, .tabla-contacto td {
+    padding: 15px;
+    border: 1px solid var(--Marron);
+    font-size: 1.8rem;
+}
+
+.tabla-contacto th {
+    background-color: var(--Marron);
+    color: var(--Blanco);
+    font-family: 'Inter', sans-serif;
+}
+
+.tabla-contacto td a {
+    color: var(--Negro);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Mejor ajuste para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .tabla-contacto {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .tabla-contacto table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabla-contacto th, .tabla-contacto td {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 12px;
+    }
+
+    .tabla-contacto th {
+        font-size: 1.8rem;
+        font-weight: bold;
+        background-color: var(--Marron);
+        color: var(--Blanco);
+    }
+}
+th, td {
+    padding: 12px;
+    border: 1px solid var(--Marron);
+    text-align: center;
+}
+
+th {
+    background-color: var(--Marron);
+    color: var(--Blanco);
+    font-family: 'Inter', sans-serif;
 }
